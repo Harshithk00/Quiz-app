@@ -1,0 +1,131 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /*   */
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  background-image: url('./assets/background1.jpg');
+  background-size: 100vw 100vh;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#quizlayout{
+  background-color: #17026d;
+  height: 40vh;
+  width: 43vw;
+  border-radius: 2rem;
+  box-shadow: 0.1vw 0.1vh 5vh#FCFCFA;
+}
+
+/* #barDiv{
+  background-color: #0091EA;
+  color: #0091EA;
+} */
+
+/* #bar{
+  width: 30vw;
+  height: 1.5vh;
+  box-shadow: 10px 5px 5px 5px #02A2FD;
+} */
+
+
+progress[value] {
+  --color: #02A2FD;
+  --background: lightgrey; 
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  height: 1.5vh;
+  width: 30vw;
+  margin: 1.5vh 10px;
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-bar {
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 10em;
+  background: var(--color);
+}
+progress[value]::-moz-progress-bar {
+  border-radius: 10em;
+  background: var(--color);
+}
+
+
+#answerDiv{
+  background-color: #0E062F;
+  height: 12vh;
+  margin:4vh;
+  border-radius: 1rem;
+  /* border-radius: 2rem; */
+  box-shadow: 1px 1px 3vh#FCFCFA;
+}
+#answerDiv p{
+  padding: 0.2em;
+  font-size: 1.6rem;
+}
+
+.StartButton{
+  min-width: fit-content;
+  min-height: fit-content;
+}
+.answerButton{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 0.8em;
+  height: 7vh;
+  width: 18vw;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #0E062F;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  min-height: fit-content;
+  
+  box-shadow: 1px 1px 1vh#FCFCFA;
+}
+.answerButton:hover {
+  border-color: #646cff;
+}
+.answerButton:focus,
+.answerButton:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#buttonDiv{
+  display: grid;
+  grid-row: 1fr 1fr;
+  gap: 1vh;
+}
+
+.buttonDivIn{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 3vw;
+}
