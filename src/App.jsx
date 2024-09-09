@@ -33,6 +33,7 @@ function App() {
   }
 
   function handleAnswerClick(option){
+    randomAnswer()
     const realAns = questions[isQuestion].answers[0]
     // console.log(realAns)
     // console.log(option)
